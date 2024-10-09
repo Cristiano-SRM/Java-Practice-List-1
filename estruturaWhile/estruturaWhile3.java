@@ -1,4 +1,4 @@
-package estruturasWhile;
+package estruturaWhile;
 import java.util.*;
 public class estruturaWhile3 {
     public static void main(String args[]) {
