@@ -1,6 +1,6 @@
 # Programa-o-De-Solucoes-Computacionais-Listas
-- Lista 1 : Cristiano SRM.
-- Lista 2 : Gabriel Felipe.
+- Lista 1 : Cristiano SRM e Gabriel Felipe.
+- Lista 2 : Gabriel Felipe e Cristiano SRM.
 - Lista 3: Gabriel Felipe.
 - Lista 4: Rafael Ferrari.
 - Lista 5: Gabriel Henrique.
