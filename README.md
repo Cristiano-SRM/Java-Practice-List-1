@@ -1,1 +1,1 @@
-# Programa-o-De-Solu-es-Computacionais-Listas
+# Programa-o-De-Solucoes-Computacionais-Listas
