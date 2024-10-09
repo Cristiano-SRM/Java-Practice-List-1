@@ -1,34 +1,36 @@
 package estruturaFor;
-import java.util.*;
-public class estruturaFor5 {
+import java.util.Scanner;
+
+public class EstruturaFor5 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        Integer intma = null;
-        Integer intmen = null;
-
-        while (true) {
-            System.out.print("Digite um número inteiro:");
-            String input = scanner.nextLine();
+        Integer maior = null;
+        Integer menor = null;
+        for (;;) {
+            System.out.print("Digite um número inteiro (ou 'sair' para encerrar): ");
+            String entrada = scanner.nextLine();
+            if (entrada.equalsIgnoreCase("sair")) {
+                break;
+            }
             try {
-                int num = Integer.parseInt(input);
-                if (intma == null || num > intma) {
-                    intma = num;
+                int numero = Integer.parseInt(entrada);
+                if (maior == null || numero > maior) {
+                    maior = numero;
                 }
-                if (intmen == null || num < intmen) {
-                    intmen = num;
+                if (menor == null || numero < menor) {
+                    menor = numero;
                 }
-
             } catch (NumberFormatException e) {
-                System.out.println("Este número não é inteiro.");
+                System.out.println("Entrada inválida. Por favor, digite um número inteiro ou 'sair'.");
             }
         }
-        if (intma != null && intmen != null) {
-            System.out.println("O maior número inteiro é: " + intma);
-            System.out.println("O menor número inteiro é: " + intmen);
+        if (maior != null && menor != null) {
+            System.out.println("O maior número informado foi: " + maior);
+            System.out.println("O menor número informado foi: " + menor);
         } else {
-            System.out.println("Nenhum número inteiro informado.");
+            System.out.println("Nenhum número válido foi informado.");
         }
-
+        
         scanner.close();
     }
 }
