@@ -1,6 +1,6 @@
 package estruturaMatriz;
 import java.util.Scanner;
-public class estruturaMatriz5 {
+public class estruturaMatriz1D {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int[][] matriz = new int[5][5];
