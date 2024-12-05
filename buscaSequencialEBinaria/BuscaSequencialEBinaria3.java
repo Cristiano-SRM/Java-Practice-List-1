@@ -22,6 +22,7 @@ public class BuscaSequencialEBinaria3 {
             } else {
                 vetorA.add(numero1);
             }
+            // preenche o vetor o quanto o usuario quiser
         }
 
         System.out.println("Agora digite números naturais para preencher o segundo vetor (Digite -1 para sair ou parar de preencher): ");
@@ -44,7 +45,6 @@ public class BuscaSequencialEBinaria3 {
         vetorC.addAll(vetorA);
 
         for (int num : vetorB) {
-        /* if (!vetorC.contains(num)) - Evitaria duplicatas, dispondo a necessidade da busca binaria ou da busca por duplicatas no conjunto C*/
                 vetorC.add(num);
             
         }

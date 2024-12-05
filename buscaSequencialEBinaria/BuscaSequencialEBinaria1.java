@@ -18,7 +18,7 @@ public class BuscaSequencialEBinaria1 {
 
         while (true) {
             // Perguntar ao usuário qual método de busca deseja usar
-            System.out.print("Informe qual método de busca deseja utilizar? (Sequencial ou Sequencial com Sentinela), ou 'sair' para encerrar: ");
+            System.out.print("Informe qual método de busca deseja utilizar? ('sequencial' ou 'sequencial_com_sentinela'), ou 'sair' para encerrar: ");
             String metodo = input.nextLine();
             String escolha = normalizarString(metodo);
 
@@ -65,6 +65,7 @@ public class BuscaSequencialEBinaria1 {
             if (vetor[i] == numeroBuscado) {
                 return comparacoes; // Retorna o número de comparações se encontrado
             }
+            // percorre todo o vetor até a achar o valor ou nao o encontra //
         }
         return -1; // Retorna -1 se não encontrado
     }
@@ -73,7 +74,8 @@ public class BuscaSequencialEBinaria1 {
     private static int buscaSequencialComSentinela(int[] vetor, int numeroBuscado) {
         int comparacoes = 0;
         int ultimo = vetor[vetor.length - 1];
-        vetor[vetor.length - 1] = numeroBuscado; // Coloca o número buscado como sentinela
+        vetor[vetor.length - 1] = numeroBuscado; /* Coloca o número buscado como sentinela
+          garantindo que o valor seja encontrado */
 
         int i = 0;
         while (vetor[i] != numeroBuscado) {

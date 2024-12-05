@@ -48,6 +48,8 @@ public class BuscaSequencialEBinaria2 {
     	   else
     		   esquerda=meio+1;
        }
+       /* pega o numero no meio do vetor
+    se o valor procurado for maior ou menor determina a direção que sera procurado*/
        return -1;
     }
 	
