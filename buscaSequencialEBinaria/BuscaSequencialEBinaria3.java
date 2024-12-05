@@ -12,7 +12,7 @@ public class BuscaSequencialEBinaria3 {
         ArrayList<Integer> vetorC = new ArrayList<>();
         // arraylist é um vetor dinamico (nao tem limite pre-determinado) o usuario preenche o quanto quiser
 
-        System.out.println("Digite números naturais para preencher o primeiro vetor (Digite -1 para sair ou parar de preencher): ");
+        System.out.println("Digite números naturais para preencher o primeiro vetor sem repetir valores (Digite -1 para sair ou parar de preencher): ");
         while (true) {
             int numero1 = input.nextInt();
             if (numero1 == -1) {
@@ -26,7 +26,7 @@ public class BuscaSequencialEBinaria3 {
             // preenche o vetor o quanto o usuario quiser
         }
 
-        System.out.println("Agora digite números naturais para preencher o segundo vetor (Digite -1 para sair ou parar de preencher): ");
+        System.out.println("Agora digite números naturais para preencher o segundo vetor sem repetir valores (Digite -1 para sair ou parar de preencher): ");
         while (true) {
             int numero2 = input.nextInt();
             if (numero2 == -1) {
