@@ -34,6 +34,7 @@ public class BuscaSequencialEBinaria1 {
 
             // Realizar a busca
             if (escolha.equals("sequencial")) {
+                //chama o metodo sequencial//
                 int comparacoes = buscaSequencial(vetor, numeroBuscado);
                 if (comparacoes != -1) {
                     System.out.println("Número encontrado após " + comparacoes + " comparações.");
@@ -43,6 +44,7 @@ public class BuscaSequencialEBinaria1 {
                 
                 
             } else if (escolha.equals("sequencial_com_sentinela")) {
+                //chama o metodo sequencial com sentinela//
                 int comparacoes = buscaSequencialComSentinela(vetor, numeroBuscado);
                 if (comparacoes != -1) {
                     System.out.println("Número encontrado após " + comparacoes + " comparações.");

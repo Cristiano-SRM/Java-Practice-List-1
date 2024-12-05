@@ -10,6 +10,7 @@ public class BuscaSequencialEBinaria3 {
         ArrayList<Integer> vetorA = new ArrayList<>();
         ArrayList<Integer> vetorB = new ArrayList<>();
         ArrayList<Integer> vetorC = new ArrayList<>();
+        // arraylist é um vetor dinamico (nao tem limite pre-determinado) o usuario preenche o quanto quiser
 
         System.out.println("Digite números naturais para preencher o primeiro vetor (Digite -1 para sair ou parar de preencher): ");
         while (true) {
@@ -50,7 +51,7 @@ public class BuscaSequencialEBinaria3 {
         }
 
         boolean temDuplicatas = verificaDuplicatas(vetorC);
-
+// booelean valor retornado (sim ou nao) sobre as duplicatas
         System.out.println("Conjunto A: " + vetorA);
         System.out.println("Conjunto B: " + vetorB);
         System.out.println("Conjunto C (união de A e B): " + vetorC);
@@ -59,6 +60,7 @@ public class BuscaSequencialEBinaria3 {
             System.out.println("Conjunto C contém elementos duplicados.");
         } else {
             System.out.println("Conjunto C não contém elementos duplicados.");
+            // se o valor boolean for sim tem duplicata se o valor boolean for nao nao tem duplicatas
         }
     }
 
@@ -66,14 +68,15 @@ public class BuscaSequencialEBinaria3 {
         Collections.sort(vetor);
         for (int i = 1; i < vetor.size(); i++) {
             int target = vetor.get(i);
-        
+        // chama a busca binaria
             if (buscaBinaria(vetor, target, 0, i - 1)) {
                 return true; 
             }
+            // verifica os valores atraves de pesquisa binaria para determinar se tem ou nao duplicatas
         }
         return false;
     }
-
+// busca binaria pega o valor no meio de 1 vetor ordenado e compara maior e menor ate encontrar uma duplicata
     public static boolean buscaBinaria(ArrayList<Integer> vetor, int valorBuscado, int inicio, int fim) {
         while (inicio <= fim) {
             int mid = inicio + (fim - inicio) / 2;

@@ -26,6 +26,7 @@ public class BuscaSequencialEBinaria2 {
             input.nextLine();
             if (escolha.equals("yes")) {
             	int esquerda=0, direita=vetor.length-1;
+                // chama o resultado da busca binaria//
             	int comparacoes=buscaBinaria(vetor, numeroBuscado, esquerda, direita);
             	 if (comparacoes != -1) {
                      System.out.println("Número encontrado após " + comparacoes + " comparações.");
